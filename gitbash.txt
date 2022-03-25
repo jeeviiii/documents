@@ -1,0 +1,196 @@
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder
+$ touch j.txt
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder
+$ git add j.txt
+fatal: Not a git repository (or any of the parent directories): .git
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder
+$ git init
+Initialized empty Git repository in C:/Users/jeevitha.ramesh/Desktop/New folder/.git/
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        j.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git config user.email "aj@gmail.com"
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git config user.name "Jeevi"
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        j.txt
+
+nothing added to commit but untracked files present
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git add j.txt
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "first commit"
+[master (root-commit) 7a0c682] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 j.txt
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ touch a.txt
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git add a.txt
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   a.txt
+
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "2nd commit"
+[master 963573d] 2nd commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a.txt
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git log
+commit 963573df1209d4036734cdc7fe95ee50ba2954cc (HEAD -> master)
+Author: Jeevi <aj@gmail.com>
+Date:   Mon Jan 31 14:50:46 2022 +0530
+
+    2nd commit
+
+commit 7a0c6821cef2e4985d5a9dbe7ffc77ecad057624
+Author: Jeevi <aj@gmail.com>
+Date:   Mon Jan 31 14:47:02 2022 +0530
+
+    first commit
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git log -oneline
+fatal: unrecognized argument: -oneline
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git log --oneline
+963573d (HEAD -> master) 2nd commit
+7a0c682 first commit
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git checkout ^C
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git checkout ^V^C
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$
+GNU bash, version 4.4.12(1)-release (x86_64-pc-msys)
+$ ^V^V^V^V^V
+bash: $'\026\026\026\026\026': command not found
+
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git checkout 7a0c6821cef2e4985d5a9dbe7ffc77ecad057624
+Note: checking out '7a0c6821cef2e4985d5a9dbe7ffc77ecad057624'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 7a0c682... first commit
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder ((7a0c682...))
+$ git checkout master
+Previous HEAD position was 7a0c682... first commit
+Switched to branch 'master'
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git rm --cached a.txt
+rm 'a.txt'
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    a.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        a.txt
+
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    a.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   j.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        a.txt
+
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$ git diff j.txt
+diff --git a/j.txt b/j.txt
+index e69de29..48ea885 100644
+--- a/j.txt
++++ b/j.txt
+@@ -0,0 +1 @@
++zxzfgdhfgh
+\ No newline at end of file
+
+jeevitha.ramesh@Asplapr872 MINGW64 ~/Desktop/New folder (master)
+$

@@ -1,0 +1,57 @@
+AZURE
+
+--> portal.azure.com
+
+Azure Global infrastructure
+--Geography
+--Region
+--AZ
+
+All services
+Networking....
+
+Virtual machine
+--create - Azure virtual machine
+
+Azure Hierarchy
+  Management Group
+         |
+    Subscription
+         |
+   Resource Group-->MySQL
+                    Virtual machine
+                    Disk
+                    Storage
+                    Network
+
+Create a subscription
+
+Resource group
+--Create 
+--subscription name
+  resource name_dft-t1
+  Region name_US
+
+Virtual machine
+--create virtual machine
+sub
+res
+vm_name
+region
+Image-CentOS-7.9 Gen2
+size-standardB1ls 1vpc .5RAM
+authentication password
+--username
+--password
+SSD
+
+AZURE RESOURCE
+Azure powershell-Azure portal-Azure CLI-SDK
+                              |
+                     Resource manager _ authentication
+                              |
+                     Microsoft.Compute
+                              |
+                              VM
+
+-->Resource Explorer

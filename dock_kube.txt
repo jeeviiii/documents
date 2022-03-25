@@ -1,0 +1,66 @@
+sudo su -
+wget --user=jeevitharamesh18@gmail.com --password=@yshU#11 
+ls
+vi Dockerfile
+docker images
+service docker start
+docker build -t jeevi10/ramesh
+docker build -t jeevi10/ramesh .
+docker build -t jeevi10/ramesh:latest .
+ls
+ docker run -d --name jeevi jeevi10/ramesh:1.0
+docker run -d --name jeevi jeevi10/ramesh
+docker login
+ls
+cd /var/lib/docker
+ls
+cd ..
+sudo su 
+sudo su -
+docker pull tomcat
+docker images 
+docker ps
+docker build -t jeevi10/ramesh:1.0 .
+vi Dockerfile
+docker build -t jeevi10/ramesh:1.0 .
+docker run -d --name jeevi jeevi10/ramesh
+docker images
+docker run -d --name jeevi jeevi10/ramesh
+docker push jeevi10/ramesh
+docker push jeevi10/ramesh:latest
+docker ps
+docker run -d --name cont1 tomcat
+docker ps
+docker push 91cefca037a2
+docker exec -it 91cefca037a2 /bin/bash
+ls
+cd webapps
+ls
+ wget --user=jeevitharamesh18@gmail.com --password=@yshU#11
+cd ..
+ls
+cd bin 
+ls
+docker ps
+ docker commit -t jeevi10/ramesh
+docker ps
+docker commit 91cefca037a2 ramesh
+docker tag ramesh jeevi10/ramesh
+ docker push jeevi10/ramesh
+ls
+vi deploy.yaml
+kubectl apply -f deploy.yaml
+aws configure
+{access key}
+region-
+outputformat-json
+kubectl apply -f deploy.yaml
+export NAME=dptcluster.k8s.local
+ export KOPS_STATE_STORE=s3://bucket-zt/state_File/
+ kops create cluster --zones=us-east-1a,us-east-1b ${NAME}
+kubectl apply -f deploy.yaml
+kubectl get pod
+ kubectl get nodes
+aws configure
+kubectl get pod
+ kubectl get nodes
